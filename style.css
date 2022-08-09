@@ -1,0 +1,402 @@
+/*
+  ROOT
+*/
+
+:root {
+  --hue: 250;
+  --white: hsl(0, 0%, 100%);
+  --white2: hsl(0, 33%, 96%);
+  --white3: hsl(312, 100%, 98%);
+  --blue1: hsl(var(--hue), 62%, 26%);
+  --blue2: hsl(var(--hue), 78%, 40%);
+  --green: hsl(var(--hue), 79%, 40%);
+  --hover: hsl(var(--hue), 72%, 20%);
+  --hover2: hsl(var(--hue), 79%, 60%);
+  --green2: hsl(var(--hue), 79%, 80%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Manrope', sans-serif;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*
+  ALL
+*/
+
+.wrapped {
+  text-align: left;
+  padding: 0 1.25rem;
+}
+
+.alignItensCenter {
+  display: flex;
+  justify-content: center;
+}
+
+/*
+  HEADER
+*/
+
+header {
+  margin-top: -1.5625rem;
+  background: var(--white2);
+}
+
+.header svg path {
+  fill: var(--blue1);
+}
+
+.header svg {
+  margin-top: 0.75rem;
+}
+
+.header {
+  gap: 1.25rem;
+  display: flex;
+  margin: 1.6875rem 1.25rem;
+  justify-content: space-between;
+}
+
+.header .time {
+  cursor: pointer;
+  font-weight: 600;
+  padding: 0.625rem;
+  color: var(--blue1);
+  font-size: 0.875rem;
+  line-height: 1.375rem;
+  border-radius: 2.5rem;
+  text-transform: uppercase;
+  border: solid 0.125rem var(--blue1);
+  transition:  border-color 0.5s, color 0.5s;
+}
+
+.header .time:hover {
+  color: var(--hover2);
+  border-color: var(--hover2);
+}
+
+/*
+  MAIN
+*/
+
+.headerMain h1 {
+  font-size: 2rem;
+  font-weight: 800;
+  color: var(--blue1);
+  line-height: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.headerMain .paragraphTitle {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: var(--blue2);
+  margin-bottom: 2rem;
+}
+
+.headerMain .wppButton,
+.headerMain .wppButton img {
+  background: var(--green);
+}
+
+.headerMain .wppButton {
+  gap: 1.25rem;
+  border: none;
+  display: flex;
+  font-weight: 700;
+  color: var(--white);
+  font-size: 0.875rem;
+  margin-bottom: 4.25rem;
+  border-radius: 5.625rem;
+  transition: background 1s;
+  padding: 0.9375rem 2.5rem;
+  text-transform: uppercase;
+}
+
+.headerMain .wppButton:hover,
+.headerMain .wppButton:hover img {
+  background-color: var(--hover);
+}
+
+.catAndDog {
+  width: 18.125rem;
+  padding-bottom: 3.4375rem;
+}
+
+/*
+  SERVICES
+*/
+
+.services {
+  padding-top: 0.3125rem;
+  background: var(--blue1);
+  padding-bottom: 0.0625rem;
+}
+
+.services h5 {
+  font-weight: 800;
+  margin: 0 1.25rem;
+  font-size: 0.75rem;
+  color: var(--green2);
+  margin: 3rem 0 0.5rem 0;
+  text-transform: uppercase;
+}
+
+.services .card {
+  border-radius: 1.875rem;
+  box-shadow: rgba(0, 0, 0, 0.35) 0rem 0.3125rem 0.9375rem;
+}
+
+.services h2 {
+  font-weight: 800;
+  font-size: 1.75rem;
+  margin-bottom: 3rem;
+  line-height: 2.25rem;
+  color: var(--white3);
+}
+
+.services .cardImg {
+  width: 100%;
+}
+
+.textImg {
+  text-align: center;
+  color: var(--white);
+  padding-block: 1.25rem;
+  background: var(--blue2);
+  margin: -0.3125rem 0 2.5rem 0;
+  border-bottom-left-radius: 1.875rem;
+  border-bottom-right-radius: 1.875rem;
+}
+
+.services h4 {
+  font-weight: 800;
+  font-size: 1.5rem;
+  margin-bottom: 0.3125rem;
+  text-transform: capitalize;
+}
+
+.services .paragraphCard {
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--white3);
+}
+
+/*
+  LOCAL
+*/
+
+.local h5 {
+  font-weight: 800;
+  font-size: 0.75rem;
+  color: var(--blue1);
+  margin: 3rem 0 1rem 0;
+  text-transform: uppercase;
+}
+
+.local h2 {
+  font-weight: 800;
+  font-size: 1.75rem;
+  color: var(--blue2);
+  line-height: 2.25rem;
+  margin-bottom: 1.625rem;
+}
+
+.local .paragraphLocal {
+  gap: 1.25rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  margin-bottom: 1.625rem;
+}
+
+.local .paragraphLocal svg path {
+  stroke: var(--blue1);
+}
+
+.local iframe {
+  width: 100%;
+  border-radius: 0.625rem;
+}
+
+/*
+  FOOTER
+*/
+
+footer {
+  padding-top: 2.8125rem;
+  background: var(--blue2);
+}
+
+footer svg {
+  margin: 2.8125rem 0 0.625rem 0;
+}
+
+footer svg path {
+  fill: var(--white);
+}
+
+footer .paragraphFooter {
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--white);
+  margin-bottom: 1.875rem;
+}
+
+footer .social {
+  gap: 1.375rem;
+  display: flex;
+  justify-content: left;
+  padding-bottom: 1.25rem;
+  margin-left: -0.4375rem;
+}
+
+@media (min-width: 64rem) {
+  /*
+    ALL
+  */
+
+  body {
+    width: 100vw;
+  }
+
+  .colA {
+    grid-area: A;
+  }
+
+  .colB {
+    grid-area: B;
+  }
+
+  .wrapped {
+    margin: 0 3.125rem 0 2.5rem;
+  }
+
+  /*
+    HEADER
+  */
+
+  header {
+    padding-top: 1.25rem;
+  }
+
+  .header svg {
+    margin-top: 0;
+  }
+
+  .header {
+    gap: 1.25rem;
+    display: flex;
+    padding-top: 40;
+    margin-top: 2.5rem;
+    justify-content: space-between;
+  }
+
+  .headerMain {
+    display: grid;
+    margin-top: 1.25rem;
+    grid-template-areas: 'A B';
+    grid-template-columns: 1.4fr 1fr;
+  }
+
+  .headerMain h1 {
+    font-weight: 800;
+    font-size: 3.5rem;
+    line-height: 4rem;
+    margin-bottom: 1rem;
+  }
+
+  .headerMain .paragraphTitle {
+    font-weight: 400;
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+    line-height: 1.75rem;
+  }
+
+  .headerMain .alignItensCenter {
+    display: flex;
+    margin-left: 3.75rem;
+    justify-content: left;
+  }
+
+  .headerMain .wppButton {
+    cursor: pointer;
+  }
+
+  .headerMain .catAndDog {
+    width: 85%;
+  }
+
+  /*
+    MAIN
+  */
+
+  /*
+    SERVICES
+  */
+
+  .services h1 {
+    font-size: 1rem;
+    font-weight: 800;
+    color: var(--green);
+    margin-bottom: 1rem;
+  }
+
+  .services h2 {
+    font-weight: 800;
+    font-size: 2.75rem;
+    margin-bottom: 3rem;
+  }
+
+  .services .cards {
+    gap: 2rem;
+    display: flex;
+  }
+
+  .services .card {
+    box-shadow: none;
+  }
+
+  /*
+    LOCAL
+  */
+
+  .local h5 {
+    font-size: 1rem;
+    font-weight: 50rem;
+    margin-bottom: 1rem;
+  }
+
+  .local h2 {
+    font-size: 2.75rem;
+    font-weight: 50rem;
+    margin-bottom: 1.5rem;
+  }
+
+  /*
+    FOOTER
+  */
+
+  footer .footer {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+  }
+
+  footer .social {
+    display: flex;
+    justify-content: center;
+  }
+}
